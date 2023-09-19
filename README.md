@@ -1,5 +1,6 @@
 # rgt 과제전형
 
+### 과제
 - 1과제 RestFul Api 작성
   -  post 를 하여 그냥 정보가 넣는것인지 아니면 input 을 하여 Data 를 넣는것인지 잘모르겠음
 - 2과제 Shopping Cart 프로그램 작성
