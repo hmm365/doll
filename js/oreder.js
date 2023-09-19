@@ -1,9 +1,3 @@
-let addButtons = document.querySelectorAll('.add-btn');
-let cartInner = document.querySelector('.cart-inner');
-let orderButton = null;
-let resetButton = null;
-let minButtons = null;
-
 let totalPrice = 0;
 let menuList;
 
@@ -140,6 +134,11 @@ menuItems.forEach((item) => {
   cardWrap.appendChild(card);
 });
 
+let addButtons = document.querySelectorAll('.add-btn');
+let cartInner = document.querySelector('.cart-inner');
+let orderButton = null;
+let resetButton = null;
+let minButtons = null;
 addButtons.forEach((button) => {
   button.addEventListener('click', () => {
     let itemName = button.dataset.name;
@@ -253,7 +252,6 @@ async function restFulApiTest() {
 
         const res = await fetch('http://211.44.24.167:9002/codingTest/post.php', requestOptions).then((response) => response.text());
         window.alert(res);
-        console.log(res);
         cartInner.innerHTML = '';
         totalPrice = 0;
         menuItems.forEach((category) => {
