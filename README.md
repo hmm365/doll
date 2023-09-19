@@ -12,4 +12,4 @@
 ### 문제점
 - CORS 오류 문제 POSTMAN 에서는 잘작동하나 실 클라이언트인 LocalHost 에서는 CORS 문제 발생
 - https --> http 호출문제 현 백엔드 서버는 http로 구성되어있음 CORS 문제를 해결하기위해 https 로 도메인을 변경하면 http 오류가 생김
-- 위 오류를 해결하기위해서는 ```open -n -a /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --args --user-data-dir="/tmp/chrome_dev_test" --disable-web-security;``` 을 쓸 필요성이있음
+- 위 오류를 해결하기위해서는 터미널에서 ```open -n -a /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --args --user-data-dir="/tmp/chrome_dev_test" --disable-web-security;``` 을 쓸 필요성이있음
